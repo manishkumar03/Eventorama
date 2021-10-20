@@ -21,18 +21,23 @@ extension UIViewController {
                                "UIInputWindowController",
                                "UISystemInputAssistantViewController",
                                "ACVTabBarController",
-                               "UINavigationController"]
+                               "UINavigationController",
+                               "SettingsFooterViewController",
+                               "SettingsTableViewController",
+                               "SettingsDetailViewController",
+                               "SettingsDetailTableViewController"
+        ]
         
         let callingVC = String(describing: type(of: self))
-      
+        
         if !screensToIgnore.contains(callingVC) {
             var props: [String: String] = [:]
             props["screenName"] = callingVC
             props["uiElementType"] = "ViewController"
-            props["uiElementLabel"] = "NA"
+            props["uiElementLabel"] = self.title
             props["uiActionTaken"] = "NA"
             EventTracker.sharedInstance.trackEvent(eventName: "view loaded", props: props)
-           
+            
             debugPrint("Swizzleeee. Call NEW view did load ")
         }
     }
@@ -44,7 +49,12 @@ extension UIViewController {
                                "UIInputWindowController",
                                "UISystemInputAssistantViewController",
                                "ACVTabBarController",
-                               "UINavigationController"]
+                               "UINavigationController",
+                               "SettingsFooterViewController",
+                               "SettingsTableViewController",
+                               "SettingsDetailViewController",
+                               "SettingsDetailTableViewController"
+        ]
         
         let callingVC = String(describing: type(of: self))
         
@@ -52,7 +62,7 @@ extension UIViewController {
             var props: [String: String] = [:]
             props["screenName"] = callingVC
             props["uiElementType"] = "ViewController"
-            props["uiElementLabel"] = "NA"
+            props["uiElementLabel"] = self.title
             props["uiActionTaken"] = "NA"
             EventTracker.sharedInstance.trackEvent(eventName: "view appeared", props: props)
             
@@ -62,10 +72,10 @@ extension UIViewController {
     
     static func startSwizzlingUIViewController() {
         var selectors: [(String, Selector, Selector)] = []
-//        let selectorsViewLoad = ("viewDidLoad",
-//                                 #selector(viewDidLoad),
-//                                 #selector(ER_viewDidLoad))
-//        selectors.append(selectorsViewLoad)
+        //        let selectorsViewLoad = ("viewDidLoad",
+        //                                 #selector(viewDidLoad),
+        //                                 #selector(ER_viewDidLoad))
+        //        selectors.append(selectorsViewLoad)
         
         let selectorsViewDidAppear = ("viewDidAppear",
                                       #selector(viewDidAppear(_:)),
@@ -75,7 +85,7 @@ extension UIViewController {
         for (lifecycleMethod, defaultSelector, newSelector) in selectors {
             let defaultInstace = class_getInstanceMethod(UIViewController.self, defaultSelector)
             let newInstance = class_getInstanceMethod(UIViewController.self, newSelector)
-
+            
             if let instance1 = defaultInstace, let instance2 = newInstance {
                 debugPrint("Swizzlle for \(lifecycleMethod) success")
                 method_exchangeImplementations(instance1, instance2)
