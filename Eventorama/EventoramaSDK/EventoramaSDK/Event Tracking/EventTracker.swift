@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 
 protocol EventTrackingProtocol {
-    func trackEvent(eventName: String, props: [String: Any])
+    func trackEvent(eventName: String, props: [String: String])
 }
 
 public class EventTracker: EventTrackingProtocol {
@@ -34,7 +34,7 @@ public class EventTracker: EventTrackingProtocol {
     
     /// Capture the event and store it in the local storage.
     /// - Parameter eventName: The name of the event which is to be captured
-    public func trackEvent(eventName: String, props: [String: Any] = [:]) {
+    public func trackEvent(eventName: String, props: [String: String] = [:]) {
         if let event = storageManager.createNewEvent(action: eventName) {
             event.id = UUID().uuidString
             event.timestamp = Date().timeIntervalSince1970
@@ -42,6 +42,21 @@ public class EventTracker: EventTrackingProtocol {
             event.appVersionNumber = Bundle.main.appVersionNumber
             event.osVersion = UIDevice.current.systemVersion
             event.platform = "iOS"
+            
+            for (key, value) in props {
+                switch key {
+                    case "screenName":
+                        event.screenName = value
+                    case "uiElementType":
+                        event.uiElementType = value
+                    case "uiElementLabel":
+                        event.uiElementLabel = value
+                    case "uiActionTaken":
+                        event.uiActionTaken = value
+                    default:
+                        print("abc")
+                }
+            }
             storageManager.saveEvent()
         }
     }
