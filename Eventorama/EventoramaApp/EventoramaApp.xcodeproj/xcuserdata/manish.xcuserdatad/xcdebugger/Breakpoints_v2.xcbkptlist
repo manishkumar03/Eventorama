@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B6B6F8DC-0BC8-4668-A2BA-E8D4B2BD65FA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B08D6E21-0738-44C6-97AA-96007B7DE832"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EventoramaSDK/EventoramaSDK/Event Tracking/EventTracker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "activateUploadTimer()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B08D6E21-0738-44C6-97AA-96007B7DE832 - 1a986105b1ed690b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EventoramaSDK.EventTracker.activateUploadTimer() -&gt; ()"
+                  moduleName = "EventoramaSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manish/Hacking/HeapAssignment/EventoramaSDK/EventoramaSDK/Event%20Tracking/EventTracker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  uuid = "B08D6E21-0738-44C6-97AA-96007B7DE832 - 1a986105b1ed690b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EventoramaSDK.EventTracker.activateUploadTimer() -&gt; ()"
+                  moduleName = "EventoramaSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manish/Hacking/HeapAssignment/EventoramaSDK/EventoramaSDK/Event%20Tracking/EventTracker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

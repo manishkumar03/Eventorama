@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		130EEA6C270E97520045ED5C /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130EEA6B270E97520045ED5C /* NetworkingClient.swift */; };
+		130EEAB4270E9E440045ED5C /* NSManagedObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130EEAB3270E9E440045ED5C /* NSManagedObject+Extension.swift */; };
+		130EEABD270EA09A0045ED5C /* EREvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130EEABC270EA09A0045ED5C /* EREvent+CoreDataClass.swift */; };
+		130EEABE270EA09A0045ED5C /* EREvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130EEABB270EA09A0045ED5C /* EREvent+CoreDataProperties.swift */; };
+		1384A9AB270E841A0016A36B /* EventoramaSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1384A9AA270E841A0016A36B /* EventoramaSDK.docc */; };
+		1384A9B1270E841A0016A36B /* EventoramaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1384A9A6270E841A0016A36B /* EventoramaSDK.framework */; };
+		1384A9B6270E841A0016A36B /* EventoramaSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384A9B5270E841A0016A36B /* EventoramaSDKTests.swift */; };
+		1384A9B7270E841A0016A36B /* EventoramaSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1384A9A9270E841A0016A36B /* EventoramaSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1384A9C2270E85310016A36B /* EventoramaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1384A9C0270E85310016A36B /* EventoramaModel.xcdatamodeld */; };
+		138A1CA9270E88330046EB8E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A1CA8270E88330046EB8E /* StorageManager.swift */; };
+		138A1CAB270E8C5D0046EB8E /* EventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A1CAA270E8C5D0046EB8E /* EventTracker.swift */; };
+		138A1CB0270E8D640046EB8E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A1CAF270E8D640046EB8E /* Bundle+Extension.swift */; };
+		13A6F2F727107F2B003533CA /* MockStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6F2F627107F2B003533CA /* MockStorageManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1384A9B2270E841A0016A36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1384A99D270E841A0016A36B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1384A9A5270E841A0016A36B;
+			remoteInfo = EventoramaSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		130EEA6B270E97520045ED5C /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		130EEAB3270E9E440045ED5C /* NSManagedObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Extension.swift"; sourceTree = "<group>"; };
+		130EEABB270EA09A0045ED5C /* EREvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EREvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		130EEABC270EA09A0045ED5C /* EREvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EREvent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1384A9A6270E841A0016A36B /* EventoramaSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventoramaSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1384A9A9270E841A0016A36B /* EventoramaSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventoramaSDK.h; sourceTree = "<group>"; };
+		1384A9AA270E841A0016A36B /* EventoramaSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EventoramaSDK.docc; sourceTree = "<group>"; };
+		1384A9B0270E841A0016A36B /* EventoramaSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventoramaSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1384A9B5270E841A0016A36B /* EventoramaSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoramaSDKTests.swift; sourceTree = "<group>"; };
+		1384A9C1270E85310016A36B /* EventoramaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventoramaModel.xcdatamodel; sourceTree = "<group>"; };
+		138A1CA8270E88330046EB8E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		138A1CAA270E8C5D0046EB8E /* EventTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTracker.swift; sourceTree = "<group>"; };
+		138A1CAF270E8D640046EB8E /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		13A6F2F627107F2B003533CA /* MockStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorageManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1384A9A3270E841A0016A36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384A9AD270E841A0016A36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1384A9B1270E841A0016A36B /* EventoramaSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		130EEA6A270E97310045ED5C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				130EEA6B270E97520045ED5C /* NetworkingClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1384A99C270E841A0016A36B = {
+			isa = PBXGroup;
+			children = (
+				1384A9A8270E841A0016A36B /* EventoramaSDK */,
+				1384A9B4270E841A0016A36B /* EventoramaSDKTests */,
+				1384A9A7270E841A0016A36B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1384A9A7270E841A0016A36B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1384A9A6270E841A0016A36B /* EventoramaSDK.framework */,
+				1384A9B0270E841A0016A36B /* EventoramaSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1384A9A8270E841A0016A36B /* EventoramaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				130EEA6A270E97310045ED5C /* Networking */,
+				138A1CAD270E8D3D0046EB8E /* Event Tracking */,
+				1384A9CB270E87C60016A36B /* LocalStorage */,
+				138A1CAE270E8D530046EB8E /* Misc */,
+				1384A9A9270E841A0016A36B /* EventoramaSDK.h */,
+				1384A9AA270E841A0016A36B /* EventoramaSDK.docc */,
+			);
+			path = EventoramaSDK;
+			sourceTree = "<group>";
+		};
+		1384A9B4270E841A0016A36B /* EventoramaSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				1384A9B5270E841A0016A36B /* EventoramaSDKTests.swift */,
+				13A6F2F627107F2B003533CA /* MockStorageManager.swift */,
+			);
+			path = EventoramaSDKTests;
+			sourceTree = "<group>";
+		};
+		1384A9CB270E87C60016A36B /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				130EEABC270EA09A0045ED5C /* EREvent+CoreDataClass.swift */,
+				130EEABB270EA09A0045ED5C /* EREvent+CoreDataProperties.swift */,
+				138A1CA8270E88330046EB8E /* StorageManager.swift */,
+				1384A9C0270E85310016A36B /* EventoramaModel.xcdatamodeld */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		138A1CAD270E8D3D0046EB8E /* Event Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				138A1CAA270E8C5D0046EB8E /* EventTracker.swift */,
+			);
+			path = "Event Tracking";
+			sourceTree = "<group>";
+		};
+		138A1CAE270E8D530046EB8E /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				138A1CAF270E8D640046EB8E /* Bundle+Extension.swift */,
+				130EEAB3270E9E440045ED5C /* NSManagedObject+Extension.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1384A9A1270E841A0016A36B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1384A9B7270E841A0016A36B /* EventoramaSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1384A9A5270E841A0016A36B /* EventoramaSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1384A9BA270E841A0016A36B /* Build configuration list for PBXNativeTarget "EventoramaSDK" */;
+			buildPhases = (
+				1384A9A1270E841A0016A36B /* Headers */,
+				1384A9A2270E841A0016A36B /* Sources */,
+				1384A9A3270E841A0016A36B /* Frameworks */,
+				1384A9A4270E841A0016A36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventoramaSDK;
+			productName = EventoramaSDK;
+			productReference = 1384A9A6270E841A0016A36B /* EventoramaSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1384A9AF270E841A0016A36B /* EventoramaSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1384A9BD270E841A0016A36B /* Build configuration list for PBXNativeTarget "EventoramaSDKTests" */;
+			buildPhases = (
+				1384A9AC270E841A0016A36B /* Sources */,
+				1384A9AD270E841A0016A36B /* Frameworks */,
+				1384A9AE270E841A0016A36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1384A9B3270E841A0016A36B /* PBXTargetDependency */,
+			);
+			name = EventoramaSDKTests;
+			productName = EventoramaSDKTests;
+			productReference = 1384A9B0270E841A0016A36B /* EventoramaSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1384A99D270E841A0016A36B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					1384A9A5270E841A0016A36B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					1384A9AF270E841A0016A36B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 1384A9A0270E841A0016A36B /* Build configuration list for PBXProject "EventoramaSDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1384A99C270E841A0016A36B;
+			productRefGroup = 1384A9A7270E841A0016A36B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1384A9A5270E841A0016A36B /* EventoramaSDK */,
+				1384A9AF270E841A0016A36B /* EventoramaSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1384A9A4270E841A0016A36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384A9AE270E841A0016A36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1384A9A2270E841A0016A36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130EEAB4270E9E440045ED5C /* NSManagedObject+Extension.swift in Sources */,
+				130EEA6C270E97520045ED5C /* NetworkingClient.swift in Sources */,
+				130EEABE270EA09A0045ED5C /* EREvent+CoreDataProperties.swift in Sources */,
+				1384A9AB270E841A0016A36B /* EventoramaSDK.docc in Sources */,
+				130EEABD270EA09A0045ED5C /* EREvent+CoreDataClass.swift in Sources */,
+				138A1CB0270E8D640046EB8E /* Bundle+Extension.swift in Sources */,
+				1384A9C2270E85310016A36B /* EventoramaModel.xcdatamodeld in Sources */,
+				138A1CA9270E88330046EB8E /* StorageManager.swift in Sources */,
+				138A1CAB270E8C5D0046EB8E /* EventTracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384A9AC270E841A0016A36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1384A9B6270E841A0016A36B /* EventoramaSDKTests.swift in Sources */,
+				13A6F2F727107F2B003533CA /* MockStorageManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1384A9B3270E841A0016A36B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1384A9A5270E841A0016A36B /* EventoramaSDK */;
+			targetProxy = 1384A9B2270E841A0016A36B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1384A9B8270E841A0016A36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1384A9B9270E841A0016A36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1384A9BB270E841A0016A36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 89;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J4VPUT8SM9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.9.23;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.manishkumar.EventoramaSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1384A9BC270E841A0016A36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 89;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J4VPUT8SM9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.9.23;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.manishkumar.EventoramaSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1384A9BE270E841A0016A36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4VPUT8SM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.manishkumar.EventoramaSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1384A9BF270E841A0016A36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4VPUT8SM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.manishkumar.EventoramaSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1384A9A0270E841A0016A36B /* Build configuration list for PBXProject "EventoramaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384A9B8270E841A0016A36B /* Debug */,
+				1384A9B9270E841A0016A36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1384A9BA270E841A0016A36B /* Build configuration list for PBXNativeTarget "EventoramaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384A9BB270E841A0016A36B /* Debug */,
+				1384A9BC270E841A0016A36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1384A9BD270E841A0016A36B /* Build configuration list for PBXNativeTarget "EventoramaSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384A9BE270E841A0016A36B /* Debug */,
+				1384A9BF270E841A0016A36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1384A9C0270E85310016A36B /* EventoramaModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1384A9C1270E85310016A36B /* EventoramaModel.xcdatamodel */,
+			);
+			currentVersion = 1384A9C1270E85310016A36B /* EventoramaModel.xcdatamodel */;
+			path = EventoramaModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1384A99D270E841A0016A36B /* Project object */;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EREvent" representedClassName="EREvent" syncable="YES">
+        <attribute name="appBuildNumber" attributeType="String"/>
+        <attribute name="appVersionNumber" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="osVersion" attributeType="String"/>
+        <attribute name="platform" attributeType="String"/>
+        <attribute name="timestamp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="EREvent" positionX="-63" positionY="-18" width="128" height="134"/>
+    </elements>
+</model>
