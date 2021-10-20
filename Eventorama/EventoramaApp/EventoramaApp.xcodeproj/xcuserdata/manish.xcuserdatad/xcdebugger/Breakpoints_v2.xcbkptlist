@@ -14,8 +14,8 @@
             filePath = "../EventoramaSDK/EventoramaSDK/Event Tracking/EventTracker.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "activateUploadTimer()"
             landmarkType = "7">
             <Locations>
@@ -55,20 +55,52 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3DDBB253-0479-4B29-91FB-056873984D33"
+            uuid = "EB958608-A2F3-469D-B598-FFDE133CAC97"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "globalUIButonAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7405CFE3-D41E-46B0-B2D4-8C8DC8B9FD6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "globalUIButonAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62DF8E39-256E-490A-AF76-1E8BB9A4DECC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "globalUIButonAction(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3DDBB253-0479-4B29-91FB-056873984D33 - 17b62cf0049206b6"
+                  uuid = "62DF8E39-256E-490A-AF76-1E8BB9A4DECC - 17b62cf004920678"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -78,12 +110,12 @@
                   urlString = "file:///Users/manish/Hacking/Hackathon/Eventorama/EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "679">
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1681">
                </Location>
                <Location
-                  uuid = "3DDBB253-0479-4B29-91FB-056873984D33 - 17b62cf004920751"
+                  uuid = "62DF8E39-256E-490A-AF76-1E8BB9A4DECC - 17b62cf004920678"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -93,11 +125,42 @@
                   urlString = "file:///Users/manish/Hacking/Hackathon/Eventorama/EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "251">
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1867">
+               </Location>
+               <Location
+                  uuid = "62DF8E39-256E-490A-AF76-1E8BB9A4DECC - 17b62cf004920678"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIControl.globalUIButonAction(__C.UIControl) -&gt; ()"
+                  moduleName = "EventoramaSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manish/Hacking/Hackathon/Eventorama/EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1706">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37BEA25B-9155-4B65-9AD6-9C8998122666"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "globalUIButonAction(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

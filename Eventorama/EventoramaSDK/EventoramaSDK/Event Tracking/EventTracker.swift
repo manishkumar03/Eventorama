@@ -42,6 +42,10 @@ public class EventTracker: EventTrackingProtocol {
             event.appVersionNumber = Bundle.main.appVersionNumber
             event.osVersion = UIDevice.current.systemVersion
             event.platform = "iOS"
+            event.screenName = "NA"
+            event.uiElementType = "NA"
+            event.uiElementLabel = "NA"
+            event.uiActionTaken = "NA"
             
             for (key, value) in props {
                 switch key {

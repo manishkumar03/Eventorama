@@ -16,20 +16,28 @@ extension UIControl {
 
     @objc func globalUIButonAction (_ sender: UIControl) {
         let parentVC = sender.nextFirstResponder { $0 is UIViewController }
-        print("Control pressed in \(parentVC!.classForCoder)")
-        //print(sender.titleLabel?.text)
         
+        var props: [String: String] = [:]
+        if let parentVC = parentVC {
+            props["screenName"] = "\(parentVC.classForCoder)"
+        }
+        
+        props["uiElementType"] = type(of: sender).description()
+        props["uiElementLabel"] = sender.accessibilityLabel
+
         switch self {
             case is UIButton:
                 if let myButton = sender as? UIButton {
-                    print(myButton.titleLabel?.text)
-                    print(myButton.accessibilityLabel)
+                    props["uiActionTaken"] = "button pressed"
+                    EventTracker.sharedInstance.trackEvent(eventName: "button pressed", props: props)
                 }
                 
             case is UISwitch:
                 if let mySwitch = sender as? UISwitch {
-                    print(mySwitch.isOn)
+                    props["uiActionTaken"] = mySwitch.isOn ? "switch turned on" : "switch turned off"
+                    EventTracker.sharedInstance.trackEvent(eventName: "switch toggled", props: props)
                 }
+                
             default:
                 print("none of the above")
         }

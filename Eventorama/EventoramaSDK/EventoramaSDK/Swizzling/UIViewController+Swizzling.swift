@@ -23,10 +23,9 @@ extension UIViewController {
             props["uiElementType"] = "ViewController"
             props["uiElementLabel"] = "NA"
             props["uiActionTaken"] = "NA"
-            
             EventTracker.sharedInstance.trackEvent(eventName: "view loaded", props: props)
+           
             debugPrint("Swizzleeee. Call NEW view did load ")
-            print("View loaded in \(callingVC)")
         }
     }
     
@@ -40,14 +39,10 @@ extension UIViewController {
             props["uiElementType"] = "ViewController"
             props["uiElementLabel"] = "NA"
             props["uiActionTaken"] = "NA"
-            
             EventTracker.sharedInstance.trackEvent(eventName: "view appeared", props: props)
             
             debugPrint("Swizzleeee. Call NEW view did appear", callingVC)
-            
-            view.backgroundColor = .blue
         }
-
     }
     
     static func startSwizzlingUIViewController() {
