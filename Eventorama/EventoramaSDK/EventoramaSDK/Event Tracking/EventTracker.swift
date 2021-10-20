@@ -34,7 +34,7 @@ public class EventTracker: EventTrackingProtocol {
     
     /// Capture the event and store it in the local storage.
     /// - Parameter eventName: The name of the event which is to be captured
-    public func trackEvent(eventName: String) {
+    public func trackEvent(eventName: String, props: [String: Any] = [:]) {
         if let event = storageManager.createNewEvent(action: eventName) {
             event.id = UUID().uuidString
             event.timestamp = Date().timeIntervalSince1970
