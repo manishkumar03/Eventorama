@@ -25,7 +25,14 @@ extension UIViewController {
                                "SettingsFooterViewController",
                                "SettingsTableViewController",
                                "SettingsDetailViewController",
-                               "SettingsDetailTableViewController"
+                               "SettingsDetailTableViewController",
+                               "UIPredictionViewController",
+                               "SBSOverlayController",
+                               "SBSBarcodePicker",
+                               "MyACVMenuHeaderViewController",
+                               "MenuTableViewController",
+                               "BackClosingModalViewController",
+                               "MyACVFlagSwitchingViewController"
         ]
         
         let callingVC = String(describing: type(of: self))
@@ -53,7 +60,14 @@ extension UIViewController {
                                "SettingsFooterViewController",
                                "SettingsTableViewController",
                                "SettingsDetailViewController",
-                               "SettingsDetailTableViewController"
+                               "SettingsDetailTableViewController",
+                               "UIPredictionViewController",
+                               "SBSOverlayController",
+                               "SBSBarcodePicker",
+                               "MyACVMenuHeaderViewController",
+                               "MenuTableViewController",
+                               "BackClosingModalViewController",
+                               "MyACVFlagSwitchingViewController"
         ]
         
         let callingVC = String(describing: type(of: self))
