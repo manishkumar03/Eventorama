@@ -8,7 +8,7 @@
 import UIKit
 import EventoramaSDK
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
     @IBOutlet weak var optForTrackingSwitch: UISwitch!
     
     let eventTracker = EventTracker.sharedInstance

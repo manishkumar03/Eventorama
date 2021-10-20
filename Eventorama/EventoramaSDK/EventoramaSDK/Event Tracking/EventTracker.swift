@@ -27,6 +27,9 @@ public class EventTracker: EventTrackingProtocol {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(activateUploadTimer), name: UIApplication.didBecomeActiveNotification, object: nil)
         notificationCenter.addObserver(self, selector: #selector(deactivateUploadTimer), name: UIApplication.willResignActiveNotification, object: nil)
+        
+        // Swizzling for automatic tracking
+        UIViewController.startSwizzlingUIViewController()
     }
     
     /// Capture the event and store it in the local storage.

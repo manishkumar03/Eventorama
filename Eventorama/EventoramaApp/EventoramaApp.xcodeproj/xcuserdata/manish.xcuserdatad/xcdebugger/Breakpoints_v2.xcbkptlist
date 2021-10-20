@@ -14,8 +14,8 @@
             filePath = "../EventoramaSDK/EventoramaSDK/Event Tracking/EventTracker.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "activateUploadTimer()"
             landmarkType = "7">
             <Locations>
@@ -48,6 +48,54 @@
                   startingLineNumber = "42"
                   endingLineNumber = "42"
                   offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DDBB253-0479-4B29-91FB-056873984D33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "globalUIButonAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3DDBB253-0479-4B29-91FB-056873984D33 - 17b62cf0049206b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIControl.globalUIButonAction(__C.UIControl) -&gt; ()"
+                  moduleName = "EventoramaSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manish/Hacking/Hackathon/Eventorama/EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "679">
+               </Location>
+               <Location
+                  uuid = "3DDBB253-0479-4B29-91FB-056873984D33 - 17b62cf004920751"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIControl.globalUIButonAction(__C.UIControl) -&gt; ()"
+                  moduleName = "EventoramaSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manish/Hacking/Hackathon/Eventorama/EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "251">
                </Location>
             </Locations>
          </BreakpointContent>

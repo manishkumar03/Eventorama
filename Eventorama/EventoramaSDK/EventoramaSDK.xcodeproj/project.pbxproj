@@ -11,6 +11,9 @@
 		130EEAB4270E9E440045ED5C /* NSManagedObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130EEAB3270E9E440045ED5C /* NSManagedObject+Extension.swift */; };
 		130EEABD270EA09A0045ED5C /* EREvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130EEABC270EA09A0045ED5C /* EREvent+CoreDataClass.swift */; };
 		130EEABE270EA09A0045ED5C /* EREvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130EEABB270EA09A0045ED5C /* EREvent+CoreDataProperties.swift */; };
+		133EEB9827208B3800CC4551 /* UIViewController+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133EEB9727208B3800CC4551 /* UIViewController+Swizzling.swift */; };
+		133EEB9A27208C0200CC4551 /* UIControl+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133EEB9927208C0200CC4551 /* UIControl+Swizzling.swift */; };
+		133EEB9C27208C2700CC4551 /* UIResponder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133EEB9B27208C2700CC4551 /* UIResponder+Ext.swift */; };
 		1384A9AB270E841A0016A36B /* EventoramaSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1384A9AA270E841A0016A36B /* EventoramaSDK.docc */; };
 		1384A9B1270E841A0016A36B /* EventoramaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1384A9A6270E841A0016A36B /* EventoramaSDK.framework */; };
 		1384A9B6270E841A0016A36B /* EventoramaSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384A9B5270E841A0016A36B /* EventoramaSDKTests.swift */; };
@@ -37,6 +40,9 @@
 		130EEAB3270E9E440045ED5C /* NSManagedObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Extension.swift"; sourceTree = "<group>"; };
 		130EEABB270EA09A0045ED5C /* EREvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EREvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		130EEABC270EA09A0045ED5C /* EREvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EREvent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		133EEB9727208B3800CC4551 /* UIViewController+Swizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Swizzling.swift"; sourceTree = "<group>"; };
+		133EEB9927208C0200CC4551 /* UIControl+Swizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Swizzling.swift"; sourceTree = "<group>"; };
+		133EEB9B27208C2700CC4551 /* UIResponder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Ext.swift"; sourceTree = "<group>"; };
 		1384A9A6270E841A0016A36B /* EventoramaSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventoramaSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1384A9A9270E841A0016A36B /* EventoramaSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventoramaSDK.h; sourceTree = "<group>"; };
 		1384A9AA270E841A0016A36B /* EventoramaSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EventoramaSDK.docc; sourceTree = "<group>"; };
@@ -76,6 +82,16 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		133EEB9627208B1300CC4551 /* Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				133EEB9727208B3800CC4551 /* UIViewController+Swizzling.swift */,
+				133EEB9927208C0200CC4551 /* UIControl+Swizzling.swift */,
+				133EEB9B27208C2700CC4551 /* UIResponder+Ext.swift */,
+			);
+			path = Swizzling;
+			sourceTree = "<group>";
+		};
 		1384A99C270E841A0016A36B = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +113,7 @@
 		1384A9A8270E841A0016A36B /* EventoramaSDK */ = {
 			isa = PBXGroup;
 			children = (
+				133EEB9627208B1300CC4551 /* Swizzling */,
 				130EEA6A270E97310045ED5C /* Networking */,
 				138A1CAD270E8D3D0046EB8E /* Event Tracking */,
 				1384A9CB270E87C60016A36B /* LocalStorage */,
@@ -254,11 +271,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				130EEAB4270E9E440045ED5C /* NSManagedObject+Extension.swift in Sources */,
+				133EEB9A27208C0200CC4551 /* UIControl+Swizzling.swift in Sources */,
 				130EEA6C270E97520045ED5C /* NetworkingClient.swift in Sources */,
 				130EEABE270EA09A0045ED5C /* EREvent+CoreDataProperties.swift in Sources */,
 				1384A9AB270E841A0016A36B /* EventoramaSDK.docc in Sources */,
+				133EEB9827208B3800CC4551 /* UIViewController+Swizzling.swift in Sources */,
 				130EEABD270EA09A0045ED5C /* EREvent+CoreDataClass.swift in Sources */,
 				138A1CB0270E8D640046EB8E /* Bundle+Extension.swift in Sources */,
+				133EEB9C27208C2700CC4551 /* UIResponder+Ext.swift in Sources */,
 				1384A9C2270E85310016A36B /* EventoramaModel.xcdatamodeld in Sources */,
 				138A1CA9270E88330046EB8E /* StorageManager.swift in Sources */,
 				138A1CAB270E8C5D0046EB8E /* EventTracker.swift in Sources */,
