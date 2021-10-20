@@ -23,7 +23,7 @@ extension UIControl {
         }
         
         props["uiElementType"] = type(of: sender).description()
-        props["uiElementLabel"] = sender.accessibilityLabel
+        props["uiElementLabel"] = sender.accessibilityIdentifier
 
         switch self {
             case is UIButton:
