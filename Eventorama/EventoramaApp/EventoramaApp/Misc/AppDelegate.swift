@@ -11,7 +11,7 @@ import EventoramaSDK
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        EventTracker.sharedInstance.trackEvent(eventName: "App opened")
+        EventTracker.sharedInstance.start()
         return true
     }
     

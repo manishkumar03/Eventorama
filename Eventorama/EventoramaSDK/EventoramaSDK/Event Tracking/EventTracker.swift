@@ -22,7 +22,9 @@ public class EventTracker: EventTrackingProtocol {
 
     
     /// Subscribe to the notified when the app becomes active or goes to background.
-    private init() {
+    private init() {}
+    
+    public func start() {
         activateUploadTimer()
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(activateUploadTimer), name: UIApplication.didBecomeActiveNotification, object: nil)

@@ -15,9 +15,17 @@ extension UIViewController {
     
     @objc func ER_viewDidLoad() {
         self.ER_viewDidLoad()
+        
+        let screensToIgnore = ["UISystemKeyboardDockController",
+                               "UICompatibilityInputViewController",
+                               "UIInputWindowController",
+                               "UISystemInputAssistantViewController",
+                               "ACVTabBarController",
+                               "UINavigationController"]
+        
         let callingVC = String(describing: type(of: self))
       
-        if callingVC != "UINavigationController" {
+        if !screensToIgnore.contains(callingVC) {
             var props: [String: String] = [:]
             props["screenName"] = callingVC
             props["uiElementType"] = "ViewController"
@@ -31,9 +39,16 @@ extension UIViewController {
     
     @objc func ER_viewDidAppear() {
         self.ER_viewDidAppear()
+        let screensToIgnore = ["UISystemKeyboardDockController",
+                               "UICompatibilityInputViewController",
+                               "UIInputWindowController",
+                               "UISystemInputAssistantViewController",
+                               "ACVTabBarController",
+                               "UINavigationController"]
+        
         let callingVC = String(describing: type(of: self))
         
-        if callingVC != "UINavigationController" {
+        if !screensToIgnore.contains(callingVC) {
             var props: [String: String] = [:]
             props["screenName"] = callingVC
             props["uiElementType"] = "ViewController"
@@ -47,10 +62,10 @@ extension UIViewController {
     
     static func startSwizzlingUIViewController() {
         var selectors: [(String, Selector, Selector)] = []
-        let selectorsViewLoad = ("viewDidLoad",
-                                 #selector(viewDidLoad),
-                                 #selector(ER_viewDidLoad))
-        selectors.append(selectorsViewLoad)
+//        let selectorsViewLoad = ("viewDidLoad",
+//                                 #selector(viewDidLoad),
+//                                 #selector(ER_viewDidLoad))
+//        selectors.append(selectorsViewLoad)
         
         let selectorsViewDidAppear = ("viewDidAppear",
                                       #selector(viewDidAppear(_:)),
