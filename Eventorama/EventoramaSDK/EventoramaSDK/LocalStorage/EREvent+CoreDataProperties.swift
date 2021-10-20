@@ -23,5 +23,9 @@ extension EREvent {
     @NSManaged public var osVersion: String?
     @NSManaged public var platform: String?
     @NSManaged public var timestamp: Double
+    @NSManaged public var screenName: String?
+    @NSManaged public var uiElementType: String?
+    @NSManaged public var uiElementLabel: String?
+    @NSManaged public var uiActionTaken: String?
 
 }

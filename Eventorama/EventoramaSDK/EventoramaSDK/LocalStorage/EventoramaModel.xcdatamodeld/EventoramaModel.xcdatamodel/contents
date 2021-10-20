@@ -7,9 +7,13 @@
         <attribute name="name" attributeType="String"/>
         <attribute name="osVersion" attributeType="String"/>
         <attribute name="platform" attributeType="String"/>
+        <attribute name="screenName" optional="YES" attributeType="String"/>
         <attribute name="timestamp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="uiActionTaken" optional="YES" attributeType="String"/>
+        <attribute name="uiElementLabel" optional="YES" attributeType="String"/>
+        <attribute name="uiElementType" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="EREvent" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="EREvent" positionX="-63" positionY="-18" width="128" height="194"/>
     </elements>
 </model>

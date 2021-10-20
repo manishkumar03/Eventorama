@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 
 protocol EventTrackingProtocol {
-    func trackEvent(eventName: String)
+    func trackEvent(eventName: String, props: [String: Any])
 }
 
 public class EventTracker: EventTrackingProtocol {
