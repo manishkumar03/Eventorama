@@ -74,6 +74,7 @@ public class EventTracker: EventTrackingProtocol {
             // Do nothing
         } else {
             uploadTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(postEventsToServer), userInfo: nil, repeats: true)
+            self.trackEvent(eventName: "app opened")
             print("Upload timer activated")
         }
     }
@@ -81,6 +82,7 @@ public class EventTracker: EventTrackingProtocol {
     /// Stop the timer to send captured events to the backend on a schedule. The timer will be deactivated everytime the host app becomes inactive.
     @objc func deactivateUploadTimer() {
         uploadTimer?.invalidate()
+        self.trackEvent(eventName: "app closed")
         print("Upload timer deactivated")
     }
     
