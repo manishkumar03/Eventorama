@@ -27,7 +27,8 @@ extension UIViewController {
                                "MyACVMenuHeaderViewController",
                                "MenuTableViewController",
                                "BackClosingModalViewController",
-                               "MyACVFlagSwitchingViewController"
+                               "MyACVFlagSwitchingViewController",
+                               "UINavigationController"
         ]
         
         let callingVC = String(describing: type(of: self))
@@ -39,13 +40,13 @@ extension UIViewController {
             props["uiElementLabel"] = self.title
             props["uiActionTaken"] = "NA"
             EventTracker.sharedInstance.trackEvent(eventName: "view loaded", props: props)
-            
-            debugPrint("Swizzleeee. Call NEW view did load ")
+            debugPrint("Swizzled-viewDidLoad-\(callingVC)")
         }
     }
     
     @objc func swizzled_viewDidAppear() {
         self.swizzled_viewDidAppear()
+        
         let screensToIgnore = ["UISystemKeyboardDockController",
                                "UICompatibilityInputViewController",
                                "UIInputWindowController",
@@ -62,7 +63,8 @@ extension UIViewController {
                                "MyACVMenuHeaderViewController",
                                "MenuTableViewController",
                                "BackClosingModalViewController",
-                               "MyACVFlagSwitchingViewController"
+                               "MyACVFlagSwitchingViewController",
+                               "UINavigationController"
         ]
         
         let callingVC = String(describing: type(of: self))
@@ -74,8 +76,7 @@ extension UIViewController {
             props["uiElementLabel"] = self.title
             props["uiActionTaken"] = "NA"
             EventTracker.sharedInstance.trackEvent(eventName: "view appeared", props: props)
-            
-            debugPrint("Swizzleeee. Call NEW view did appear", callingVC)
+            debugPrint("Swizzled-viewDidAppear-\(callingVC)")
         }
     }
     
@@ -96,7 +97,7 @@ extension UIViewController {
             let newInstance = class_getInstanceMethod(UIViewController.self, newSelector)
             
             if let instance1 = defaultInstace, let instance2 = newInstance {
-                debugPrint("Swizzlle for \(lifecycleMethod) success")
+                debugPrint("Swizzling set up successfully for \(lifecycleMethod)")
                 method_exchangeImplementations(instance1, instance2)
             }
         }

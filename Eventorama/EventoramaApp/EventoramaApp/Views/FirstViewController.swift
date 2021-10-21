@@ -15,8 +15,6 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        eventTracker.trackEvent(eventName: "View loaded")
     }
 
     @IBAction func changedTrackingOption(_ sender: UISwitch) {

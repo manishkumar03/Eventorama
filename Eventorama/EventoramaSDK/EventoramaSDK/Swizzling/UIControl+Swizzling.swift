@@ -11,10 +11,11 @@ extension UIControl {
     
     override open func awakeFromNib() {
         super.awakeFromNib()
-        self.addTarget(self, action: #selector(globalUIButonAction), for: .touchUpInside)
+        self.addTarget(self, action: #selector(globalUIControlAction), for: .touchUpInside)
     }
 
-    @objc func globalUIButonAction (_ sender: UIControl) {
+    @objc func globalUIControlAction (_ sender: UIControl) {
+        /// The ViewController which contains this control
         let parentVC = sender.nextFirstResponder { $0 is UIViewController }
         
         var props: [String: String] = [:]
@@ -27,14 +28,14 @@ extension UIControl {
 
         switch self {
             case is UIButton:
-                if let myButton = sender as? UIButton {
+                if let buttonControl = sender as? UIButton {
                     props["uiActionTaken"] = "button pressed"
                     EventTracker.sharedInstance.trackEvent(eventName: "button pressed", props: props)
                 }
                 
             case is UISwitch:
-                if let mySwitch = sender as? UISwitch {
-                    props["uiActionTaken"] = mySwitch.isOn ? "switch turned on" : "switch turned off"
+                if let switchControl = sender as? UISwitch {
+                    props["uiActionTaken"] = switchControl.isOn ? "switch turned on" : "switch turned off"
                     EventTracker.sharedInstance.trackEvent(eventName: "switch toggled", props: props)
                 }
                 

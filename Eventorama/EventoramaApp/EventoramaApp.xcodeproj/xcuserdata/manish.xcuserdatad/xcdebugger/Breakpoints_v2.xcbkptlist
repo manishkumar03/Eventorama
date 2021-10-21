@@ -62,9 +62,9 @@
             filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "globalUIButonAction(_:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "globalUIControlAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -78,9 +78,9 @@
             filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "globalUIButonAction(_:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "globalUIControlAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -94,9 +94,9 @@
             filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "globalUIButonAction(_:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "globalUIControlAction(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -157,10 +157,74 @@
             filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIControl+Swizzling.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "globalUIButonAction(_:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "globalUIControlAction(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF421E4C-10D6-47CD-B1E7-CB969553FB17"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIViewController+Swizzling.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "swizzled_viewDidAppear()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D0642A2-6D10-4897-A6D6-6ABE8C63FA2B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EventoramaSDK/EventoramaSDK/Swizzling/UIViewController+Swizzling.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "swizzled_viewDidAppear()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D0642A2-6D10-4897-A6D6-6ABE8C63FA2B - 4183e7dca477c45c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.swizzled_viewDidAppear() -&gt; ()"
+                  moduleName = "EventoramaSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manish/Hacking/Hackathon/Eventorama/EventoramaSDK/EventoramaSDK/Swizzling/UIViewController+Swizzling.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "1301">
+               </Location>
+               <Location
+                  uuid = "1D0642A2-6D10-4897-A6D6-6ABE8C63FA2B - 4183e7dca477c47d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.swizzled_viewDidAppear() -&gt; ()"
+                  moduleName = "EventoramaSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manish/Hacking/Hackathon/Eventorama/EventoramaSDK/EventoramaSDK/Swizzling/UIViewController+Swizzling.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "1084">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
