@@ -8,13 +8,8 @@
 import UIKit
 
 extension UIViewController {
-    
-    func pretty_function(_ file: String = #file, function: String = #function, line: Int = #line) {
-        print("file:\(file) function:\(function) line:\(line)")
-    }
-    
-    @objc func ER_viewDidLoad() {
-        self.ER_viewDidLoad()
+    @objc func swizzled_viewDidLoad() {
+        self.swizzled_viewDidLoad()
         
         let screensToIgnore = ["UISystemKeyboardDockController",
                                "UICompatibilityInputViewController",
@@ -49,8 +44,8 @@ extension UIViewController {
         }
     }
     
-    @objc func ER_viewDidAppear() {
-        self.ER_viewDidAppear()
+    @objc func swizzled_viewDidAppear() {
+        self.swizzled_viewDidAppear()
         let screensToIgnore = ["UISystemKeyboardDockController",
                                "UICompatibilityInputViewController",
                                "UIInputWindowController",
@@ -86,15 +81,15 @@ extension UIViewController {
     
     static func startSwizzlingUIViewController() {
         var selectors: [(String, Selector, Selector)] = []
-        //        let selectorsViewLoad = ("viewDidLoad",
+        //        let selectorViewLoad = ("viewDidLoad",
         //                                 #selector(viewDidLoad),
-        //                                 #selector(ER_viewDidLoad))
-        //        selectors.append(selectorsViewLoad)
+        //                                 #selector(swizzled_viewDidLoad))
+        //        selectors.append(selectorViewLoad)
         
-        let selectorsViewDidAppear = ("viewDidAppear",
+        let selectorViewDidAppear = ("viewDidAppear",
                                       #selector(viewDidAppear(_:)),
-                                      #selector(ER_viewDidAppear))
-        selectors.append(selectorsViewDidAppear)
+                                      #selector(swizzled_viewDidAppear))
+        selectors.append(selectorViewDidAppear)
         
         for (lifecycleMethod, defaultSelector, newSelector) in selectors {
             let defaultInstace = class_getInstanceMethod(UIViewController.self, defaultSelector)
