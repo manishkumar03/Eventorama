@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIViewController {
+    
     @objc func swizzled_viewDidLoad() {
         self.swizzled_viewDidLoad()
         
@@ -82,6 +83,8 @@ extension UIViewController {
     
     static func startSwizzlingUIViewController() {
         var selectors: [(String, Selector, Selector)] = []
+        
+        /// Uncomment the following lines to track `viewDidLoad` events
         //        let selectorViewLoad = ("viewDidLoad",
         //                                 #selector(viewDidLoad),
         //                                 #selector(swizzled_viewDidLoad))
